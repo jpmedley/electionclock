@@ -12,6 +12,16 @@
     Seconds: <span class="seconds"></span>
 </div>
 <script src="clock.js" type="text/javascript"></script>
+<script>
+  if ('serviceWorker' in navigator) {
+    console.log("[ElectionClock] Will service worker register?");
+    navigator.serviceWorker.register('serviceworker.js').then( reg => {
+      console.log("[ElectionClock] Yes it did.");
+    }).catch( function(err) {
+      console.log("[ElectionClock] No it didn't. This happened: ", err);
+    });
+  }
+</script>
 </body>
 </html>
 
