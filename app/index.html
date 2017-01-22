@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<script src="https://www.gstatic.com/firebasejs/3.6.6/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyAj-E1p7HU60zbXoZXeRj22mB3HACGehF0",
+	    authDomain: "election-clock.firebaseapp.com",
+	    databaseURL: "https://election-clock.firebaseio.com",
+	    storageBucket: "election-clock.appspot.com",
+	    messagingSenderId: "112725372993"
+	  };
+	  firebase.initializeApp(config);
+	</script>
 	<link rel="manifest" href="manifest.json">
 </head>
 <body>
 	<h1>Midterm Election Clock</h1>
+	<p>The next midterm election is on November 6, 2018. Until that date there remains:</p>
 	<div id="clockdiv">
     Days: <span class="days"></span><br>
     Hours: <span class="hours"></span><br>
