@@ -6,7 +6,7 @@ var swPrecache = require('sw-precache');
 var webserver = require('gulp-webserver');
 
 var rootDir = 'app';
-var version = '001';
+var version = '002';
 
 gulp.task('serve', function(callback) {
 	gulp.src(rootDir)
